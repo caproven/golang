@@ -121,7 +121,7 @@ Idx: 10	Rune: '界'
 */
 ```
 
-If a UTF-8 decoder consumes an unexpected input byte, it generates a special Unicode *replacement character* '\uFFFD' (the character of a white question mark inside a black diamond).
+If a UTF-8 decoder consumes an unexpected input byte, it generates a special Unicode *replacement character* '\uFFFD' (the character of a white question mark inside a black diamond: �).
 
 ### Byte Slices
 Constructing strings from repeated string concatenations is inefficient since it involves a lot of allocation and copying, so we can utilize byte slices instead. If know we will be doing heavy modification with a string, we can first convert the string to a bytes slice with `[]byte(s)`. This conversion can be done both ways to change to or from a string.
