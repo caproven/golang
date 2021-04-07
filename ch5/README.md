@@ -30,7 +30,7 @@ func sumInts(nums []int) (sum int) {
 ```
 
 ### Recursion
-Recursion is typically limited by the function call stack since it is a fixed size in many languages. Go on t he contrary has a variable-size stack that grows as needed. This means that we typically don't have to worry about stack overflows.
+Recursion is typically limited by the function call stack since it is a fixed size in many languages. Go on the contrary has a variable-size stack that grows as needed. This means that we typically don't have to worry about stack overflows.
 
 ### Errors
 Go functions handle errors by providing some indicitive result to the caller. This is typically the last parameter. Sticking to conventions, the last result should be a boolean `ok` if there was only one possible cause of failure. If there are multiple causes of failure, then the type should be of the `error` interface (interfaces will be covered in a later chapter).
